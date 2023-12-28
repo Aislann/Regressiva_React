@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ .App{
+  min-height: 100vh;
+  animation: animateBg 10s linear infinite;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: no-repeat;
+} 
+
+/* animação mudança de cor */
+@keyframes animateBg {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.container{
+  margin-top: 30px;
+  min-width: 35%;
+  height: 250px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 2rem;
+  position: fixed;  
+  top: 0;         
+  left: 50%;       
+  transform: translateX(-50%);
+}
+
+.contagem-regressiva{
+  display: flex;
+  height: 200px;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container{
+      height: 500px;
+      top: 10%;
+      width: 75%;
+    }
+
+    .contagem-regressiva{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+
+    .App{
+      max-width: 320px;
+      min-height: 858px;
+    }
+}
