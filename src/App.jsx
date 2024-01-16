@@ -1,5 +1,5 @@
 import Title from './components/Title' // Componente para importação
-import NewYear from './assets/newYear.jpg'
+import NewYear from './assets/Background_NewYear.jpg'
 import Contador from './components/Contador'
 import userCountDown from './hooks/userCountDown'
 import './App.css'

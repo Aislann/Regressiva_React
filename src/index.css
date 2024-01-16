@@ -11,7 +11,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: no-repeat;
+
+  
 } 
 
 /* animação mudança de cor */
@@ -26,14 +27,13 @@
   min-width: 35%;
   height: 250px;
   color: black;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   padding: 2rem;
   border-radius: 2rem;
-  position: fixed;  
-  top: 0;         
-  left: 50%;       
+  position: fixed;             
   transform: translateX(-50%);
+  left: 50%;
 }
 
 .contagem-regressiva{
